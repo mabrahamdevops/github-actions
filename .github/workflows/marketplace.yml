@@ -10,6 +10,6 @@ jobs:
     steps:
     - name: Check out the code
       uses: actions/checkout@v2
-    - name: Due Dates
-      uses: alexleventer/github-issue-due-dates-action@1.1.0
+    - name: Python Syntax Checker
+      uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
 
