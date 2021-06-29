@@ -1,0 +1,23 @@
+name:  complext workflow
+
+on: push
+
+jobs:
+  ubuntu:
+    runs-on: 
+    steps: ubuntu-lates
+    - run: date
+  windows:
+    runs-on: windows-lates
+    steps:
+    - run: date
+  macos:
+  runs-on: macos-latest
+    steps:
+    - run: date
+  depends:
+    needs: [ubuntu, windows, macos]
+  runs-on: windows-lates
+    steps:
+    - run: date
+   
